@@ -1,0 +1,40 @@
+.padre
+{
+    padding: 5px;
+    background-color:lightskyblue;
+    display: grid;
+    grid-gap: 15px;
+    justify-content: center; 
+    align-items: center;    
+    min-height: 100vh;      
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav     nav     nav"
+                         "cont1  cont2  publi"
+                         "cont1    cont2   publi";
+}
+.padre .header
+{
+    grid-area: header;
+}
+.padre .nav
+{
+    grid-area: nav;
+}
+.padre .cont1
+{
+    grid-area: cont1;
+}
+.padre .cont2
+{
+    grid-area: cont2;
+}
+.padre .publi
+{
+    grid-area: publi;
+}
+
+
+p {
+    margin-bottom: 20px; 
+}
